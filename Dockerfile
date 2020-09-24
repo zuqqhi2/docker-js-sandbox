@@ -9,5 +9,7 @@ RUN apt-get install -y tzdata
 
 # Install Node.js(v10.19.0)
 RUN apt-get install -y \
+    # Essential tools for sandbox
+    git curl vim \
     # For nodejs
     nodejs npm
